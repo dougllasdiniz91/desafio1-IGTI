@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Final</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="header" class="text-center font-weight-bolder">
+        Pesquisa de Usuários
+      </h1>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="input-group">
+          <span class="input-group-append input-group-text badge-primary">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="text"
+            id="name"
+            class="form-control mr-sm-2"
+            placeholder="Buscar"
+          />
+          <button
+            class="btn btn-primary input-group-append"
+            disabled
+            id="button"
+          >
+            BUSCAR
+          </button>
+        </div>
+      </nav>
+      <div>
+        <div class="filter col" id="estatistics">
+          <h1 class="text-center">Nada a ser exibido</h1>
+        </div>
+
+        <div
+          id="myCarousel"
+          class="carousel slide"
+          data-ride="carousel"
+          data-interval="500"
+          data-wrap="false"
+        >
+          <div id="search">
+            <h1 class="text-center">
+              Nenhum usuário filtrado
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
